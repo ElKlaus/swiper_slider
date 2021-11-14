@@ -1,0 +1,35 @@
+body, html {
+  height: 100%;
+}
+
+.home-header {
+  background-color: $deep;
+  height: 100%;
+  color: #fff;
+}
+
+.top-line {
+  position: absolute;
+  width: 100%;
+  height: $size;
+  top: 0;
+  border-bottom: 1px solid rgba(#fff, $border-opacity);
+  z-index: 10;
+  background-color: $deep;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 0 0 200px;
+}
+
+.menu-button-container {
+  flex: 0 0 200px;
+  text-align: right;
+}
+
+.top-line__decoration {
+  flex: 1 0 0;
+  text-align: center;
+}
