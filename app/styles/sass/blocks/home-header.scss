@@ -6,6 +6,7 @@ body, html {
   background-color: $deep;
   height: 100%;
   color: #fff;
+  padding-top: $size;
 }
 
 .top-line {
@@ -114,4 +115,45 @@ body, html {
 
 .top-line__text {
   color: rgba(#fff, .75);
+}
+
+// ASIDE
+.home-header__content {
+  height: 100%;
+}
+
+.home-aside {
+  background-color: $dark;
+  width: $size;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding-top: $size;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.home-aside__decoration {
+  flex: 1 0 0;
+  background-image: url(../images/dist/decoration.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-aside_soc {
+  flex: 1 0 0;
+}
+
+.home-aside__share-icon {
+  background-color: $accent;
+  width: $size;
+  flex: 0 0 $size;
+  background-image: url(../images/dist/share-solid.svg);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
