@@ -46,6 +46,7 @@
 		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
-		"global": "^4.4.0"
+		"global": "^4.4.0",
+		"swiper": "^7.3.1"
 	}
 }
