@@ -47,6 +47,7 @@
 	},
 	"dependencies": {
 		"global": "^4.4.0",
+		"gsap": "^3.8.0",
 		"swiper": "^7.3.1"
 	}
 }
