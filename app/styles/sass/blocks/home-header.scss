@@ -7,6 +7,9 @@ body, html {
   height: 100%;
   color: #fff;
   padding-top: $size;
+  @include media-breakpoint-down(sm) {
+    padding-top: $size-sm;
+  }
 }
 
 .top-line {
@@ -19,6 +22,9 @@ body, html {
   background-color: $deep;
   display: flex;
   align-items: center;
+  @include media-breakpoint-down(sm) {
+    height: $size-sm;
+  }
 }
 
 .logo {
@@ -43,6 +49,10 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
+  @include media-breakpoint-down(sm) {
+    width: $size-sm;
+    height: $size-sm;
+  }
 }
 
 .menu-button-container {
@@ -50,6 +60,9 @@ body, html {
   text-align: right;
   position: relative;
   height: $size;
+  @include media-breakpoint-down(sm) {
+    height: $size-sm;
+  }
 }
 
 .menu-button {
@@ -65,6 +78,10 @@ body, html {
   transition: background .25s ease-out;
   &:hover {
     background-color: $accent;
+  }
+  @include media-breakpoint-down(sm) {
+    width: $size-sm;
+    height: $size-sm;
   }
 }
 
@@ -124,16 +141,20 @@ body, html {
 
 .home-aside {
   background-color: $dark;
-  width: $size;
   height: 100%;
   position: absolute;
   top: 0;
+  width: $size;
   padding-top: $size;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 5;
+  @include media-breakpoint-down(sm) {
+    width: $size-sm;
+    padding-top: $size-sm;
+  }
 }
 
 .home-aside__decoration {
@@ -156,6 +177,10 @@ body, html {
   background-size: 12px;
   background-repeat: no-repeat;
   background-position: center;
+  @include media-breakpoint-down(sm) {
+    width: $size-sm;
+    flex: 0 0 $size-sm;
+  }
 }
 
 .soc-item {
@@ -194,18 +219,25 @@ body, html {
   height: 100%;
   overflow: hidden;
   position: relative;
+  @include media-breakpoint-down(sm) {
+    padding-left: $size-sm;
+  }
 }
 
 .slider-bottom {
   position: absolute;
   bottom: 0;
-  height: $size;
   display: flex;
   align-items: center;
-  left: $size;
-  // background-color: #666;
   z-index: 5;
+  height: $size;
+  left: $size;
   width: calc(75% - #{$size});
+  @include media-breakpoint-down(sm) {
+    height: $size-sm;
+    left: $size-sm;
+    width: 100%;
+  }
 }
 
 .slider-share {
@@ -236,6 +268,10 @@ body, html {
       height: 100%;
       background-color: $accent;
     }
+  }
+  @include media-breakpoint-down(sm) {
+    height: $size-sm;
+    width: $size-sm;
   }
 }
 
@@ -270,6 +306,9 @@ body, html {
   z-index: 3;
   width: 100%;
   height: calc(100% - #{$size});
+  @include media-breakpoint-down(sm) {
+    height: calc(100% - #{$size-sm});
+  }
 }
 
 .slider-text__slide {
@@ -279,10 +318,6 @@ body, html {
 }
 
 .slider-text__content {
-  // display: flex;//правки
-  // justify-content: center;//правки
-  // flex-direction: column;//правки
-  // align-items: flex-end;//правки
   text-align: right;
   padding-right: 22%;
 }
@@ -322,7 +357,6 @@ body, html {
   height: $size;
   align-items: center;
   position: relative;
-  bottom: 0; //Правки
   .swiper-pagination-bullet {
     width: 6px;
     height: 6px;
@@ -343,6 +377,9 @@ body, html {
       left: -4px;
       top: -4px;
     }
+  }
+  @include media-breakpoint-down(sm) {
+    height: $size-sm;
   }
 }
 
